@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wrapper {
+  @apply w-full h-full flex flex-col justify-center items-center;
+}
+.contain {
+  @apply w-[90%]  flex xl:w-[60%] 4xl:w-[50%];
+}
+.headings {
+  @apply text-[35px] sm:text-[45px] lg:text-[55px] xl:text-[60px] 2xl:text-[65px] font-bold;
+}
+.title {
+  @apply text-[23px] sm:text-[33px] lg:text-[43px] xl:text-[48px] 2xl:text-[53px] font-bold;
+}
+.description {
+  @apply text-sm lg:text-base xl:text-lg font-normal;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  transition: all 500ms;
+}
+.bg {
+  background-image: url(/public/Banner.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
