@@ -4,27 +4,134 @@
 @tailwind utilities;
 
 .wrapper {
-  @apply w-full h-full flex flex-col justify-center items-center;
+  @apply w-full h-full flex flex-col items-center;
 }
+
 .contain {
-  @apply w-[90%]  flex xl:w-[60%] 4xl:w-[50%];
+  @apply w-[90%] flex xl:w-[80%] 2xl:w-[73%] 3xl:w-[55%] 4xl:w-[60%];
 }
+
 .headings {
-  @apply text-[35px] sm:text-[45px] lg:text-[55px] xl:text-[60px] 2xl:text-[65px] font-bold;
+  @apply text-[35px] sm:text-[45px] md:text-[50px] lg:text-[55px] xl:text-[65px] 2xl:text-[65px] 4xl:text-[80px] font-bold leading-[120%];
 }
+
 .title {
-  @apply text-[23px] sm:text-[33px] lg:text-[43px] xl:text-[48px] 2xl:text-[53px] font-bold;
+  @apply text-[30px] sm:text-[35px] lg:text-[38px] xl:text-[46px] 2xl:text-[53px] font-bold;
+}
+.sub-title{
+  @apply text-[20px] sm:text-[25px] lg:text-[28px] xl:text-[36px] 2xl:text-[43px] font-bold;
+}
+.mini-title{
+  @apply text-[16px] sm:text-[15px] lg:text-[18px] xl:text-[26px]  font-bold;
 }
 .description {
-  @apply text-sm lg:text-base xl:text-lg font-normal;
+  @apply text-sm lg:text-base xl:text-lg font-normal leading-[180%];
 }
+
+.sub-des {
+  @apply text-sm lg:text-base leading-[180%];
+}
+
 body {
   font-family: "Poppins", sans-serif;
   transition: all 500ms;
+  overflow-x: hidden;
 }
+
 .bg {
   background-image: url(/public/Banner.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.active {
+  width: 100%;
+  background-color: black;
+  color: white;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.slick-dots {
+  display: none;
+}
+
+ .card {
+display: flex;
+justify-content: center;
+align-items: center;
+
+} 
+.box{
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 8px 20px rgba(18, 17, 39, 0.13);
+  border-radius: 12px;
+}
+.splide__arrow {
+  overflow: hidden !important;
+  align-items: center !important ;
+  background: rgba(18, 17, 39, 0.04) !important;
+ border-radius: 50% !important ;
+  cursor: pointer !important ;
+  height: 40px !important ;
+  opacity: .7 !important ;
+  padding: 0 !important ;
+  position: absolute !important ;
+  transform: translateY(1%) !important ; 
+  width: 80px !important ;
+  z-index: 1 !important ;
+  border-radius: 100px !important ;
+  transition: all 500ms !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.splide__arrow:hover{
+  background-color: #D40C0C !important;
+}
+.splide__arrow--prev{
+  left: 50% !important;
+  padding-top: 2rem !important;
+  padding-right: 1.5rem !important;
+  top: 110% !important;
+}
+.splide__arrow--next{
+  top: 110% !important ;
+  padding-top: 2rem !important;
+  right: 52% !important;
+  padding-left: 1.5rem !important;
+}
+.splide__arrow svg {
+fill: #000000 !important;
+  height: 70px !important;
+  width: 70px !important;
+}
+.splide__arrow svg:hover {
+  fill: #ffffff !important;
+}
+
+@media  (min-width: 600px){
+	.splide__arrow svg {
+    fill: #000000 !important;
+      height: 100px !important;
+      width: 100px !important;
+    }
+}
+.form{
+  background: #FFFFFF;
+box-shadow: 0px 12px 50px rgba(18, 17, 39, 0.08);
+border-radius: 16px;
+}
+
+
+input::-webkit-input-placeholder{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 180%;
+  color: rgba(18, 17, 39, 0.4);
+  /* or 25px */
+}
+::-webkit-scrollbar {
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0);
 }
