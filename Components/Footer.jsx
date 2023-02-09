@@ -2,12 +2,24 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import AOS from "aos";
+
+import { useEffect } from "react";
+import "aos/dist/aos.css";
 
 const Footer = () => {
   const router = useRouter();
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+    });
+    AOS.refresh();
+  }, []);
+
   return (
     <>
-      <div className="contain flex-col xl:flex-row w-full justify-between items-center md:items-stretch pt-[35px] md:pt-[70px]">
+      <div  data-aos="zoom-out" className="contain flex-col xl:flex-row w-full justify-between items-center md:items-stretch pt-[35px] md:pt-[70px]">
         <div className="flex flex-col w-full">
           <div>
             {" "}
@@ -27,16 +39,16 @@ const Footer = () => {
           <div>
             <ul className="text-white flex flex-col gap-1">
               <li className="text-[14px] font-semibold">MAP</li>
-              <li className="text-[14px]  mt-2 font-normal leading-[180%] opacity-80">
+              <li className="text-[14px]  cursor-pointer    mt-2 font-normal leading-[180%] opacity-80">
                 Home
               </li>
-              <li className="text-[14px] font-normal leading-[180%] opacity-80">
+              <li className="text-[14px]  cursor-pointer   font-normal leading-[180%] opacity-80">
                 Carrier Dashboard
               </li>
-              <li className="text-[14px] font-normal leading-[180%] opacity-80">
+              <li className="text-[14px]  cursor-pointer   font-normal leading-[180%] opacity-80">
                 Join Our Team
               </li>
-              <li className="text-[14px] font-normal leading-[180%] opacity-80">
+              <li className="text-[14px]  cursor-pointer   font-normal leading-[180%] opacity-80">
                 Testimonials
               </li>
             </ul>
@@ -44,16 +56,16 @@ const Footer = () => {
           <div>
             <ul className="text-white flex flex-col gap-1">
               <li className="text-[14px] font-semibold">Company</li>
-              <li className="text-[14px]  mt-2 font-normal leading-[180%] opacity-80">
+              <li className="text-[14px]  cursor-pointer    mt-2 font-normal leading-[180%] opacity-80">
                 Contact Us
               </li>
-              <li className="text-[14px] font-normal leading-[180%] opacity-80">
+              <li className="text-[14px]   cursor-pointer  font-normal leading-[180%] opacity-80">
                 Careers
               </li>
-              <li className="text-[14px] font-normal leading-[180%] opacity-80">
+              <li className="text-[14px]  cursor-pointer   font-normal leading-[180%] opacity-80">
                 Privacy Policy
               </li>
-              <li className="text-[14px] font-normal leading-[180%] opacity-80">
+              <li className="text-[14px]  cursor-pointer   font-normal leading-[180%] opacity-80">
                 Insights
               </li>
             </ul>
@@ -61,7 +73,7 @@ const Footer = () => {
           <div>
             <ul className="text-white flex flex-col gap-1">
               <li className="text-[14px] font-semibold">Get in touch</li>
-              <li className=" mt-2 flex gap-3 items-center">
+              <li className=" mt-2 flex gap-3 items-center cursor-pointer ">
                 <div>
                   <img src="location.png" alt="" />
                 </div>
@@ -71,7 +83,7 @@ const Footer = () => {
                   </p>
                 </div>
               </li>
-              <li className=" flex gap-2 items-center">
+              <li className=" flex gap-2 items-center cursor-pointer ">
                 <div>
                   <img src="sms.png" alt="" />
                 </div>
@@ -87,7 +99,7 @@ const Footer = () => {
       </div>
       <div className="contain">
         {" "}
-        <div className="h-[1px] w-[100%]  bg-white mt-[30px] lg:mt-[60px]"></div>
+        <div  className="h-[1px] w-[100%]  bg-white mt-[30px] lg:mt-[60px]"></div>
       </div>
       <div className="w-full">
         <p className="sub-des text-center text-white my-4">
