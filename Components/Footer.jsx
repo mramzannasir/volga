@@ -9,7 +9,10 @@ const Footer = () => {
     <>
       <div className="contain flex-col xl:flex-row w-full justify-between items-center md:items-stretch pt-[35px] md:pt-[70px]">
         <div className="flex flex-col w-full">
-          <img src="footer-logo.png" className="w-[99px] h-[76px]" alt="" />
+          <div>
+            {" "}
+            <img src="footer-logo.png" className="w-[99px] h-[76px]" alt="" />
+          </div>
           <p className="text-white sub-des md:my-3">
             Streamlining your supply chain, one truck at a time.
           </p>
