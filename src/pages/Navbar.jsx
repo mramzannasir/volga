@@ -34,14 +34,14 @@ const Navbar = () => {
           </div>
           <div
             onClick={onclick}
-            className="cursor-pointer z-[99] lg:hidden right-1 top-5 transition-all duration-500 absolute text-2xl">
+            className="cursor-pointer z-[99] lg:hidden right-4 top-4 transition-all duration-500 absolute text-2xl">
             {open ? (
               <div className="sm:hidden">
                 {" "}
                 <IoMdClose color="#ffffff" />
               </div>
             ) : (
-              <FiMenu color="#ffffff" />
+              <FiMenu size={30} color="#ffffff" />
             )}
           </div>
 
@@ -51,7 +51,7 @@ const Navbar = () => {
             transition={{ duration: 1.2 }}
             className={`flex flex-col lg:items-center h-screen pt-8 lg:pt-0 z-[100] w-full text-[14px] leading-[180%] font-normal lg:h-auto bg-[#1B1B1B] top-0   lg:flex-row absolute lg:static ${
               open ? "left-0" : "left-[-1080px]"
-            }  lg:bg-inherit w-full sm:w-[60%] lg:w-auto h-full gap-8 lg:gap-6 font-normal left-0  transition-all ease duration-[800ms]`}>
+            }  lg:bg-inherit w-full sm:w-[60%] lg:w-auto h-full gap-8 lg:gap-6 xl:gap-8 font-normal left-0  transition-all ease duration-[800ms]`}>
             <div>
               {" "}
               <img className=" w-24 lg:hidden" src="/logo.png" />
@@ -110,7 +110,7 @@ const Navbar = () => {
                 className="absolute top-[6px] -right-4">
                 <AiOutlineCaretDown />
               </di>
-              <div className="absolute w-2 h-4 ">
+              <div className="absolute hidden lg:block w-2 h-4 ">
                 {show && (
                   <motion.div
                     initial={{ opacity: 0 }}
@@ -150,7 +150,7 @@ const Navbar = () => {
           </motion.div>
 
           <Link className="lg:hidden" href={"/login"}>
-            <button className="w-[70px] mr-5 py-[6px] bg-red rounded-md text-white text-sm lg:text-base">
+            <button className="w-[70px] sm:mr-7 mr-10 py-[6px] bg-red rounded-md text-white text-sm lg:text-base">
               Login
             </button>
           </Link>
