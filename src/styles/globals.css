@@ -27,7 +27,9 @@
 .description {
   @apply text-sm lg:text-base xl:text-lg font-normal leading-[180%];
 }
-
+.destwo {
+  @apply text-sm lg:text-base xl:text-lg font-bold leading-[180%];
+}
 .sub-des {
   @apply text-sm lg:text-base leading-[180%];
 }

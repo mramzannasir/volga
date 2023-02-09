@@ -1,6 +1,9 @@
 import React from 'react'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const Footer = () => {
+  const router = useRouter();
   return (
     <>
         <div className="contain flex-col xl:flex-row w-full justify-between items-center md:items-stretch pt-[35px] md:pt-[70px]">
