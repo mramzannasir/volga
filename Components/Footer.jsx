@@ -9,11 +9,7 @@ const Footer = () => {
     <>
       <div className="contain flex-col xl:flex-row w-full justify-between items-center md:items-stretch pt-[35px] md:pt-[70px]">
         <div className="flex flex-col w-full">
-          <img
-            src="footer-logo.png"
-            className="max-w-[99px] max-h-[76px]"
-            alt=""
-          />
+          <img src="footer-logo.png" className="w-[99px] h-[76px]" alt="" />
           <p className="text-white sub-des md:my-3">
             Streamlining your supply chain, one truck at a time.
           </p>
@@ -86,7 +82,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="h-[1px] w-[91%] flex xl:w-[80%] 2xl:w-[71%] 3xl:w-[51%] 4xl:w-[61%] bg-white mt-[30px] lg:mt-[60px] "></div>
+      <div className="contain">
+        {" "}
+        <div className="h-[1px] w-[100%]  bg-white mt-[30px] lg:mt-[60px]"></div>
+      </div>
       <div className="w-full">
         <p className="sub-des text-center text-white my-4">
           Copyright © 2022. All Rights Reserved.
