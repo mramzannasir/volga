@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .wrapper {
-  @apply w-full h-full flex flex-col items-center;
+  @apply w-full h-full flex flex-col items-center ;
 }
 
 .contain {

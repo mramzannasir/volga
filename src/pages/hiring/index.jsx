@@ -19,7 +19,7 @@ const index = () => {
   }, []);
 
   return (
-    <>
+    <div className="overflow-x-hidden">
       <main className="bg-[url(/hiring.png)] bg-cover md:bg-[length:100%_100%] bg-center bg-no-repeat w-full wrapper relative">
         <div className="contain flex-col text-white h-[300px] md:h-[250px] lg:h-[320px] xl:h-[400px] 2xl:h-[420px] 3xl:h-[450px] 4xl:h-[500px]">
           <Navbar />
@@ -290,7 +290,7 @@ const index = () => {
       <div className="wrapper bg-[#1b1b1b]">
         <Footer />
       </div>
-    </>
+    </div>
   );
 };
 

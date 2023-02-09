@@ -51,7 +51,7 @@ const Navbar = () => {
             transition={{ duration: 1.2 }}
             className={`flex flex-col lg:items-center h-screen pt-8 lg:pt-0 z-[100] w-full text-[14px] leading-[180%] font-normal lg:h-auto bg-[#1B1B1B] top-0   lg:flex-row absolute lg:static ${
               open ? "left-0" : "left-[-1080px]"
-            }  lg:bg-inherit w-full sm:w-[60%] lg:w-auto h-full gap-8 lg:gap-6 xl:gap-8 font-normal left-0  transition-all ease duration-[800ms]`}>
+            }  lg:bg-inherit w-full sm:w-[60%] lg:w-auto h-full z-[99] gap-8 lg:gap-6 xl:gap-8 font-normal left-0  transition-all ease duration-[800ms]`}>
             <div>
               {" "}
               <img className=" w-24 lg:hidden" src="/logo.png" />

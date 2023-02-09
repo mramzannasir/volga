@@ -18,7 +18,7 @@ const index = () => {
     AOS.refresh();
   }, []);
   return (
-    <>
+    <div className="overflow-x-hidden">
       <div className="wrapper border-b-[1px] border-borderwhite pb-3">
         <div className="contain text-black">
           <div className="w-full text-white lg:text-black">
@@ -341,7 +341,7 @@ const index = () => {
       <div className="wrapper bg-[#1B1B1B]">
         <Footer />
       </div>
-    </>
+    </div>
   );
 };
 

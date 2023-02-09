@@ -14,11 +14,11 @@ const index = () => {
     AOS.refresh();
   }, []);
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <div className="wrapper ">
         <div className="contain flex flex-col text-[#121127]">
           {" "}
-          <div className="w-full border-b-[1px] border-borderwhite">
+          <div className="w-full lg:border-b-[1px] border-borderwhite">
             {" "}
             <div className="w-full text-white lg:text-black">
               <Navbar />
