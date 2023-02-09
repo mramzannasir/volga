@@ -2,24 +2,13 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import AOS from "aos";
-
-import { useEffect } from "react";
-import "aos/dist/aos.css";
 
 const Footer = () => {
   const router = useRouter();
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1200,
-    });
-    AOS.refresh();
-  }, []);
-
   return (
     <>
-      <div  data-aos="zoom-out" className="contain flex-col xl:flex-row w-full justify-between items-center md:items-stretch pt-[35px] md:pt-[70px]">
+      <div className="contain flex-col xl:flex-row w-full justify-between items-center md:items-stretch pt-[35px] md:pt-[70px]">
         <div className="flex flex-col w-full">
           <div>
             {" "}
@@ -99,7 +88,7 @@ const Footer = () => {
       </div>
       <div className="contain">
         {" "}
-        <div  className="h-[1px] w-[100%]  bg-white mt-[30px] lg:mt-[60px]"></div>
+        <div className="h-[1px] w-[100%]  bg-white mt-[30px] lg:mt-[60px]"></div>
       </div>
       <div className="w-full">
         <p className="sub-des text-center text-white my-4">
