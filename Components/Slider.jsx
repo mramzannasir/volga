@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -12,6 +13,7 @@ const Sliders = () => {
     slidesToScroll: 1,
     autoplay: true,
     Infinity: true,
+    arrows: false,
     dots: false,
     pauseOnHover: false,
     autoplaySpeed: 1000,
@@ -24,6 +26,7 @@ const Sliders = () => {
           slidesToScroll: 1,
           infinite: true,
           dots: false,
+          arrows: false,
         },
       },
       {
@@ -32,6 +35,7 @@ const Sliders = () => {
           slidesToShow: 3,
           slidesToScroll: 1,
           initialSlide: 2,
+          arrows: false,
         },
       },
       {
@@ -39,6 +43,7 @@ const Sliders = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
+          arrows: false,
         },
       },
     ],

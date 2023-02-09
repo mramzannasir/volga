@@ -10,7 +10,9 @@ const index = () => {
           {" "}
           <div className="w-full border-b-[1px] border-borderwhite">
             {" "}
+            <div className="w-full text-white lg:text-black">
             <Navbar />
+          </div>
           </div>
           <main className="flex flex-col lg:flex-row items-stretch justify-between h-[800px]">
             <div className="hidden lg:block lg:w-[40%]">

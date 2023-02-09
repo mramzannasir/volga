@@ -17,7 +17,7 @@ export default function Home() {
       <main className='w-full'>
         {/* Home */}
         <div className='bg-[url(/Banner.png)] bg-cover md:bg-[length:100%_100%] bg-center bg-no-repeat w-full wrapper'>
-          <div className="w-full contain flex-col h-[470px] md:h-[600px] lg:h-[650px] xl:h-[750px] 2xl:h-[810px] 3xl:h-[810px]">
+          <div className="w-full contain flex-col h-[490px] md:h-[600px] lg:h-[650px] xl:h-[750px] 2xl:h-[810px] 3xl:h-[810px]">
             <div className='w-full z-[96 text-white'>
               <Navbar />
             </div>

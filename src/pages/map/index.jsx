@@ -7,9 +7,9 @@ const index = () => {
   return (
     <div className="">
       <div className="wrapper">
-        <div className="w-full">
-          <Navbar />
-        </div>
+      <div className="w-full text-white lg:text-black">
+            <Navbar />
+          </div>
       </div>
       <div className="w-full">
         <div className="flex flex-col xl:flex-row h-screen">

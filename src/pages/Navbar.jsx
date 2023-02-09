@@ -107,10 +107,10 @@ const Navbar = () => {
               Join Our Team
               <di
                 onClick={() => setShow(!show)}
-                className="absolute top-[6px] -right-4">
+                className="absolute hidden lg:block top-[6px] -right-4">
                 <AiOutlineCaretDown />
               </di>
-              <div className="absolute hidden lg:block w-2 h-4 ">
+              <div className="absolute w-2 h-4 ">
                 {show && (
                   <motion.div
                     initial={{ opacity: 0 }}
@@ -135,7 +135,7 @@ const Navbar = () => {
             </Link>
             <Link
               className={
-                router.pathname == "/Uni"
+                router.pathname == "/map"
                   ? "bg-[#D40C0C] lg:bg-inherit lg:text-[#D40C0C] text-white w-[90%] lg:w-auto px-4 py-2 lg:p-0 rounded-r-xl"
                   : "pl-2 lg:pl-0"
               }

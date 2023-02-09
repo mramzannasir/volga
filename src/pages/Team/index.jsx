@@ -11,7 +11,9 @@ const index = () => {
     <>
       <div className="wrapper border-b-[1px] border-borderwhite pb-3">
         <div className="contain text-black">
-          <Navbar />
+        <div className="w-full text-white lg:text-black">
+            <Navbar />
+          </div>
         </div>
       </div>
       <div className="wrapper mt-[60px] md:mt-[100px] xl:mt-[100px]">
