@@ -5,18 +5,10 @@ import Navbar from "../Navbar";
 import { motion } from "framer-motion";
 import { BsCheckLg } from "react-icons/bs";
 import Footer from "Components/Footer";
-import AOS from "aos";
-import { useEffect } from "react";
-import "aos/dist/aos.css";
 
 const index = () => {
   const [show, setShow] = useState();
-  useEffect(() => {
-    AOS.init({
-      duration: 1200,
-    });
-    AOS.refresh();
-  }, []);
+
   return (
     <div className="overflow-x-hidden">
       <div className="wrapper border-b-[1px] border-borderwhite pb-3">
@@ -53,12 +45,16 @@ const index = () => {
               </p>
             </div>
             <div className="w-full justify-center sm:justify-start mt-4">
-              <button data-aos="zoom-in" className="text-white py-3 px-8 rounded-lg bg-red text-[16px]">
+              <button
+                data-aos="zoom-in"
+                className="text-white py-3 px-8 rounded-lg bg-red text-[16px]">
                 Subscribase Al Curso
               </button>
             </div>
           </div>
-          <div data-aos="fade-left" className="w-full lg:w-[43%]  flex justify-center items-center">
+          <div
+            data-aos="fade-left"
+            className="w-full lg:w-[43%]  flex justify-center items-center">
             <img src="team.png" className="w-full" alt="" />
           </div>
         </div>
@@ -85,9 +81,9 @@ const index = () => {
       </div>
       <div className="wrapper bg-[#F9F9FB]">
         <div className="contain flex flex-col py-14 md:py-[120px]">
-          <h1 data-aos="fade-up" className="text-center title text-black">Estamos contratando!</h1>
+          <h1 className="text-center title text-black">Estamos contratando!</h1>
           <div className="w-full flex justify-center">
-            <div data-aos="zoom-in" className="form w-full lg:w-[60%] flex flex-col justify-center items-center p-1 md:px-4 pt-8 pb-8">
+            <div className="form w-full lg:w-[60%] flex flex-col justify-center items-center p-1 md:px-4 pt-8 pb-8">
               <div className="w-[100%] md:w-[90%] ">
                 <h1 className="text-center text-red mini-title">Aplicacion</h1>
                 <div className="w-full flex flex-col gap-2 xl:gap-3 mt-2">

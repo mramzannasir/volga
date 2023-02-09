@@ -2,19 +2,8 @@
 import Footer from "Components/Footer";
 import React from "react";
 import Navbar from "../Navbar";
-import AOS from 'aos';
-
-import { useEffect } from 'react'
-import 'aos/dist/aos.css';
 
 const index = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1200,
-    });
-    AOS.refresh();
-  }, []);
-
   return (
     <div className="overflow-x-hidden">
       <main className="bg-[url(/Services-baner.png)] bg-cover md:bg-[length:100%_100%] bg-center bg-no-repeat w-full wrapper relative">
@@ -24,17 +13,17 @@ const index = () => {
           </div>
         </div>
         <div className="w-full absolute bottom-[50px] md:h-[30px] md:bottom-[100px] 4xl:bottom-[170px]">
-          <h1 data-aos="fade-up" className="headings text-white text-center z-[-1]">
+          <h1 className="headings text-white text-center z-[-1]">
             Dispatch Services
           </h1>
         </div>
       </main>
       <div className="wrapper my-[60px] md:my-[100px] xl:my-[120px]">
         <div className="contain flex-col lg:flex-row items-stretch lg:gap-3 justify-center">
-          <div data-aos="fade-right" className="w-full lg:w-[48%] ">
+          <div className="w-full lg:w-[48%] ">
             <img src="Services-1.png" className="w-full" alt="" />
           </div>
-          <div data-aos="fade-left" className="w-full lg:w-[48%] ">
+          <div className="w-full lg:w-[48%] ">
             <h1 className="title text-black">Basic Service Plan</h1>
             <h1 className="text-red sub-title">
               (basic fee is 10%) of line-haul

@@ -4,19 +4,11 @@ import Navbar from "../Navbar";
 import { BsCheckLg } from "react-icons/bs";
 import { motion } from "framer-motion";
 import Footer from "Components/Footer";
-import AOS from "aos";
-import { useEffect } from "react";
-import "aos/dist/aos.css";
+
 
 const index = () => {
   const [show, setShow] = useState();
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1200,
-    });
-    AOS.refresh();
-  }, []);
 
   return (
     <div className="overflow-x-hidden">
@@ -26,7 +18,7 @@ const index = () => {
         </div>
         <div className="w-full absolute bottom-[50px] md:h-[30px] md:bottom-[100px] 4xl:bottom-[170px]">
           <h1
-            data-aos="fade-up"
+        
             className="headings text-white text-center z-[-1]">
             We Are Hiring!
           </h1>
@@ -36,7 +28,7 @@ const index = () => {
         <div className="contain items-center justify-center flex-col my-[60px] md:my-[100px] xl:my-[120px]">
           {" "}
           <div
-            data-aos="zoom-in"
+    
             className="form w-full lg:w-[60%] flex flex-col justify-center items-center p-1 md:px-4 pt-8">
             <div className="w-[100%] md:w-[90%] ">
               <h1 className="text-center text-black mini-title">Aplicacion</h1>

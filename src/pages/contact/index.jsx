@@ -2,17 +2,8 @@
 import Footer from "Components/Footer";
 import React from "react";
 import Navbar from "../Navbar";
-import AOS from "aos";
-import { useEffect } from "react";
-import "aos/dist/aos.css";
-
 const index = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1200,
-    });
-    AOS.refresh();
-  }, []);
+ 
 
   return (
     <div className="overflow-x-hidden">
@@ -21,7 +12,7 @@ const index = () => {
           <Navbar />
         </div>
         <div className="w-full absolute bottom-[50px] md:h-[30px] md:bottom-[100px] 4xl:bottom-[170px]">
-          <h1 data-aos="fade-up" className="headings text-white text-center z-[-1]">Contact us</h1>
+          <h1  className="headings text-white text-center z-[-1]">Contact us</h1>
         </div>
       </main>
       <div className="wrapper">

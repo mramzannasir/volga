@@ -2,17 +2,10 @@
 import Footer from "Components/Footer";
 import React from "react";
 import Navbar from "../Navbar";
-import AOS from "aos";
-import { useEffect } from "react";
-import "aos/dist/aos.css";
+
 
 const index = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1200,
-    });
-    AOS.refresh();
-  }, []);
+
   return (
     <div className="overflow-x-hidden">
       <div className="wrapper ">
@@ -29,7 +22,7 @@ const index = () => {
               <img src="uni.png" className="h-full w-full" alt="" />
             </div>
             <div
-              data-aos="fade-left"
+             
               className="flex flex-col w-full lg:w-[55%] pt-[40px] md:pt-16 lg:pt-14 overflow-y-scroll">
               <h1 className="title text-black">
                 Volga Express University (Español)
