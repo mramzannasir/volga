@@ -23,7 +23,7 @@ const index = () => {
             </div>
             <div
              
-              className="flex flex-col w-full lg:w-[55%] pt-[40px] md:pt-16 lg:pt-14 overflow-y-scroll">
+              className="flex flex-col w-full lg:w-[55%] pt-[40px] md:pt-16 lg:pt-14 lg:overflow-y-scroll">
               <h1 className="title text-black">
                 Volga Express University (Español)
               </h1>

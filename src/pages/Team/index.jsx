@@ -44,7 +44,7 @@ const index = () => {
                 un servicio eficiente y de calidad a los clientes.
               </p>
             </div>
-            <div className="w-full justify-center sm:justify-start mt-4">
+            <div className="w-full flex justify-center sm:justify-start mt-4">
               <button
                 data-aos="zoom-in"
                 className="text-white py-3 px-8 rounded-lg bg-red text-[16px]">
@@ -84,7 +84,7 @@ const index = () => {
           <h1 className="text-center title text-black">Estamos contratando!</h1>
           <div className="w-full flex justify-center">
             <div className="form w-full lg:w-[60%] flex flex-col justify-center items-center p-1 md:px-4 pt-8 pb-8">
-              <div className="w-[100%] md:w-[90%] ">
+              <div className="w-[98%] md:w-[90%] ">
                 <h1 className="text-center text-red mini-title">Aplicacion</h1>
                 <div className="w-full flex flex-col gap-2 xl:gap-3 mt-2">
                   <div className="w-full flex flex-col md:flex-row gap-2 lg:gap-4">
