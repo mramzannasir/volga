@@ -1,10 +1,13 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable @next/next/no-img-element */
 import Layout from "@/Layout/Layout";
 import React from "react";
+import { useRouter } from "next/router";
 
 import Link from "next/link";
 
 const index = () => {
+  const router = useRouter();
   return (
     <>
       <div className="wrapper">
@@ -43,7 +46,7 @@ const index = () => {
               />
             </div>
             <div className="w-full">
-              <button className="w-full bg-red h-10 md:h-12 rounded-md flex justify-center items-center text-white text-[16px] font-normal">
+              <button onClick={(()=>router.replace("/"))} className="w-full bg-red h-10 md:h-12 rounded-md flex justify-center items-center text-white text-[16px] font-normal">
                 Continue with email
               </button>
             </div>

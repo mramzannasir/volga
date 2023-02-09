@@ -6,10 +6,17 @@ import { BsCheckLg } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Footer from "Components/Footer";
-
+import AOS from "aos";
+import { useEffect } from "react";
+import "aos/dist/aos.css";
 const index = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+    });
+    AOS.refresh();
+  }, []);
   const [show, setShow] = useState();
-
   return (
     <div>
       <main className="bg-[url(/dashboard.png)] bg-cover md:bg-[length:100%_100%] bg-center bg-no-repeat w-full wrapper relative">
@@ -17,20 +24,20 @@ const index = () => {
           <Navbar />
         </div>
         <div className="w-full absolute bottom-[50px] md:h-[30px] md:bottom-[100px] 4xl:bottom-[170px]">
-          <h1 className="headings text-white text-center ">Carrier Setup</h1>
+          <h1 data-aos="fade-up" className="headings text-white text-center">Carrier Setup</h1>
         </div>
       </main>
       <div className="wrapper mt-[70px] lg:mt-[120px]">
-        <div className="contain flex-col xl:flex-row  items-stretch">
+        <div className="contain flex-col xl:flex-row gap-6 items-stretch">
           <div className="">
-            <h1 className="title">Onboarding</h1>
+            <h1 data-aos="fade-up"  className="title">Onboarding</h1>
             <div className="w-full">
-              <p className="description text-normalblack">
+              <p data-aos="fade-up" className="description text-normalblack">
                 Please Click Here to download dispatch agreement form, then
                 upload all documents below.
               </p>
-              <div className="w-full mt-2 md:pl-1  ">
-                <ul className="list-disc text-newblack  list-inside description">
+              <div className="w-full mt-2 md:pl-2  ">
+                <ul data-aos="zoom-in" className="list-disc text-newblack  list-inside lg:list-outside lg:px-6  description">
                   <li>Copy of Client’s Authority.</li>
                   <li>Proof of insurance certificates,</li>
                   <li>A signed W-9</li>
@@ -44,7 +51,7 @@ const index = () => {
             </div>
           </div>
 
-          <div className="form relative w-full flex flex-col py-[6px] xl:w-[70%] lg:py-[20px] px-[5px] sm:px-[10px] md:px-[20px] lg:px-[30px]">
+          <div data-aos="fade-left" className="form relative w-full flex flex-col py-8 md:py-16 mt-8  xl:w-[70%]  px-[5px] sm:px-[10px] md:px-[20px] lg:px-[30px]">
             <div className="flex w-full flex-col md:flex-row gap-2 items-center justify-start md:mb-2 xl:mb-4">
               <input
                 type="text"
@@ -92,7 +99,7 @@ const index = () => {
               <h1 className="sub-des text-black font-bold">
                 Type Of Equipment *
               </h1>
-              <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-3 mt-2">
+              <div className="w-full grid grid-cols-2 pl-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-3 mt-2">
                 <div className="w-full flex items-center ">
                   <div className="relative ">
                     <input

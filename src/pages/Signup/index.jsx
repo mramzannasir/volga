@@ -8,11 +8,11 @@ const index = () => {
   return (
     <div className="w-full h-screen flex items-center overflow-hidden">
       <div className="w-full md:w-[40%] flex flex-col justify-center items-center">
-        <div className="w-full md:w-[80%]">
+        <div className="w-[95%] md:w-[80%]">
           <img src="logo.png" className="w-[100px]" alt="" />
           <h1 className="title text-black">Sign in to your account</h1>
           <div className="w-full justify-center sm:justify-start my-4 md:my-6">
-            <button className="px-4  w-full sm:w-[60%] md:w-[80%] lg:w-[60%]  rounded-md bg-red py-4 text-white flex justify-center gap-2 items-center">
+            <button className="px-4  w-full  rounded-md bg-red py-4 text-white flex justify-center gap-2 items-center">
               <div>
                 <img src="g.png" alt="" />
               </div>
@@ -42,7 +42,9 @@ const index = () => {
             />
           </div>
           <div className="w-full">
-            <button onClick={(()=>router.replace('/'))} className="w-full bg-red h-10 md:h-12 rounded-md flex justify-center items-center text-white text-[16px] font-normal">
+            <button
+              onClick={() => router.replace("/")}
+              className="w-full bg-red h-10 md:h-12 rounded-md flex justify-center items-center text-white text-[16px] font-normal">
               Continue with email
             </button>
           </div>

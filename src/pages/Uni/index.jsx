@@ -1,8 +1,18 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import Footer from "Components/Footer";
 import React from "react";
 import Navbar from "../Navbar";
+import AOS from "aos";
+import { useEffect } from "react";
+import "aos/dist/aos.css";
 
 const index = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+    });
+    AOS.refresh();
+  }, []);
   return (
     <div>
       <div className="wrapper ">
@@ -11,14 +21,16 @@ const index = () => {
           <div className="w-full border-b-[1px] border-borderwhite">
             {" "}
             <div className="w-full text-white lg:text-black">
-            <Navbar />
-          </div>
+              <Navbar />
+            </div>
           </div>
           <main className="flex flex-col lg:flex-row items-stretch justify-between h-[800px]">
             <div className="hidden lg:block lg:w-[40%]">
               <img src="uni.png" className="h-full w-full" alt="" />
             </div>
-            <div className="flex flex-col w-full lg:w-[55%] pt-[40px] md:pt-16 lg:pt-14 overflow-y-scroll">
+            <div
+              data-aos="fade-left"
+              className="flex flex-col w-full lg:w-[55%] pt-[40px] md:pt-16 lg:pt-14 overflow-y-scroll">
               <h1 className="title text-black">
                 Volga Express University (Español)
               </h1>
@@ -66,14 +78,16 @@ const index = () => {
                   las piezas del rompecabezas. Aprenderás sobre los diferentes
                   medios de transporte y cómo seleccionar la ruta más adecuada
                   para cada carga, así como las{" "}
-                </p><p className="sub-des text-normalblack">
+                </p>
+                <p className="sub-des text-normalblack">
                   Además de aprender sobre las tareas de un despachador de
                   carga, también obtendrás una comprensión profunda de cómo
                   funciona la industria de transporte y cómo se relacionan todas
                   las piezas del rompecabezas. Aprenderás sobre los diferentes
                   medios de transporte y cómo seleccionar la ruta más adecuada
                   para cada carga, así como las{" "}
-                </p><p className="sub-des text-normalblack">
+                </p>
+                <p className="sub-des text-normalblack">
                   Además de aprender sobre las tareas de un despachador de
                   carga, también obtendrás una comprensión profunda de cómo
                   funciona la industria de transporte y cómo se relacionan todas
