@@ -5,7 +5,7 @@ import { CiSearch } from "react-icons/ci";
 
 const index = () => {
   return (
-    <div className="">
+    <div className="w-full overflow-x-hidden">
       <div className="wrapper">
       <div className="w-full text-white lg:text-black">
             <Navbar />
