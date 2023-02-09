@@ -41,7 +41,7 @@ const Navbar = () => {
                 <IoMdClose color="#ffffff" />
               </div>
             ) : (
-              <FiMenu size={30} color="#ffffff" />
+              <FiMenu size={30} color="#A1A1A1" />
             )}
           </div>
 
